@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Ubuntu:wght@300;500&display=swap"
+        rel="stylesheet">
+
+    <title>DC MATCHING GAME</title>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="splash-screen">
+            <h1>DC MATCHING GAME</h1>
+            <p>Use your super powers to make matches in this classic game.</p>
+            <h2>Instructions</h2>
+            <p>Click on a card to flip it. Flip two cards with the same image they stay flipped, otherwise they turn
+                back over.</p>
+
+            <p>Good luck!</p>
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <div id="game-screen">
+            <!--- Canvas -->
+            <h3 id="game-screen-moves-time">Moves: </h3>
+            <h3 id="game-screen-moves-time">Time: </h3>
+        </div>
+
+        <div id="gameover-screen">
+            <h1>DC MATCHING GAME</h1>
+
+            <h2>Congratulations!</h2>
+            <p>Your time is...</p>
+
+            <p>Best time: </p>
+            <ol>
+                <li>test</li>
+            </ol>
+            <button id="restart-button">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
