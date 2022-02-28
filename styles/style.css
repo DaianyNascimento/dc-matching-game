@@ -1,16 +1,16 @@
 body {
-    padding: 0;
-    text-align: center;
-    font-family: "Ubuntu";
+  padding: 0;
+  text-align: center;
+  font-family: "Ubuntu";
 }
 
 .splash-screen {
-    float: center;
-    padding: 0% 3%;
+  float: center;
+  padding: 0% 3%;
 }
 
 .splash-screen p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /*.logo-img {
@@ -21,26 +21,27 @@ body {
   width: 150px;
 }*/
 
-#start-button {
-    font-size: 20px;
-    font-family: "Ubuntu";
-    background-color: #0476f2;
-    color: #fff;
-    padding: 10px 20px;
-    border: 0;
-    box-shadow: 0;
-    border-radius: 5px;
-    margin-bottom: 20px;
+#start-button,
+#restart-button {
+  font-size: 20px;
+  font-family: "Ubuntu";
+  background-color: #0476f2;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 #game-screen {
-    float: center;
-    padding: 0% 3%;
+  float: center;
+  padding: 0% 3%;
 }
 
 #gameover-screen {
-    float: center;
-    padding: 0% 3%;
+  float: center;
+  padding: 0% 3%;
 }
 /* #game-board {
   float: left;
