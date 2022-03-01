@@ -3,9 +3,8 @@ const gameScreen = document.getElementById("game-screen");
 const gameOverScreen = document.getElementById("gameover-screen");
 
 let clickedCards = [];
-let cards, backCard, table, batman, superman, joker;
+let cards, backCard, batman, superman, joker;
 let tries = 0;
-let restart = false;
 
 function preload() {
     backCard = loadImage('../images/DC_Comics_logo.png')
@@ -16,9 +15,11 @@ function preload() {
 }
 
 function setup() {
-    const canvas = createCanvas(900, 700);
-    canvas.parent("game-screen"); // insert canvas in div id="game-screen"
-    cards = shuffle([10, 10, 20, 20, 30, 30])
+    const canvas = createCanvas(540, 500);
+    canvas.parent("game-screen");
+    select('canvas').position(270, 40);
+
+    cards = shuffle([10, 10, 20, 20, 30, 30]);
 }
 
 function mousePressed() {
@@ -38,7 +39,7 @@ function mousePressed() {
     } else {
         for (let i = 0; i < cards.length; i++) {
             let pos = 95 + i * 70;
-            //console.log(pos);
+            console.log(pos);
             if (mouseX >= pos && mouseX <= pos + 55 && mouseY >= 100 && mouseY <= 180) {
 
                 if (i != clickedCards[0]) {
@@ -48,25 +49,15 @@ function mousePressed() {
             }
         }
     }
-
-    /* function keyPressed() {
-         if (keyCode == 82) {
-             restart = true;
-         }
-     }*/
 }
 
 function draw() {
-    image(bgImg, 0, 0, width, height);
+    //image(bgImg, 0, 0, width, height);
+    background('#FFFFFF');
 
-    fill(255);
-    textSize(25);
-    textFont('Arial');
-    text('Memory Game', (width / 2) - 80, 20, 200, 100);
-
-
-    for (let i = 0; i < cards.length; i++) { // draws the cards 
+    for (let i = 0; i < cards.length; i++) {
         image(backCard, 95 + (i * 70), 100, 55, 80);
+
         if (clickedCards[0] == i || clickedCards[1] == i) {
 
             if (cards[i] == 10) {
@@ -85,21 +76,8 @@ function draw() {
 
     text('Tries: ' + tries, 20, height - 50, 200, 100);
     textSize(15);
-    text('Press "R" to restart', (width / 3) + 28, height - 50, 300, 100);
-
-    if (restart == true) {
-        // text('restart', (width / 2) - 30, (height / 2), 200, 200);
-        tries = 0;
-        cards = shuffle([10, 10, 20, 20, 30, 30]);
-        clickedCards = []
-        restart = false;
-        //console.log('restart')
-    }
 
     if (cards.length == 0) {
-        /*textSize(40);
-        text('Congratulations!', (width / 2) - 145, (height / 2) - 60, 200, 100);*/
-
         gameScreen.style.display = "none";
         gameOverScreen.style.display = "";
         tries = 0;
