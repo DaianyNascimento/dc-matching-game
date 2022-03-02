@@ -1,9 +1,9 @@
-# dc-matching-game
+# DC Characters Matching Game
 Use your super powers to make matches in this classic game.
 
 
 ## Description
-Brief description of the project
+This is a simple matching game where the player has to find the images that matches. The player needs to click on a card to flip it. Flip two cards with the same image they stay flipped,            otherwise they turn back over. The game ends when all matches are found or when all the tries are over.
 
 
 ## MVP (DOM - CANVAS)
@@ -18,9 +18,8 @@ Brief description of the project
 
 
 ## Backlog
-- add amount of moves made.
-- add a timer.
-- on gameover screen display total time spent and best time.
+- add amount of tries made.
+- on gameover screen display total tries made and the best play (the one with less tries).
 
 
 ## Data structure

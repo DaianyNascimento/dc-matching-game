@@ -1,6 +1,7 @@
 .splash-screen,
 #gameover-screen,
-#game-screen {
+#game-screen,
+#gameover-screen-2 {
   float: center;
   padding: 0% 3%;
   width: 1000px;
@@ -18,7 +19,11 @@
 
 #start-button,
 #restart-button,
-#sound-button {
+#sound-button-splash-screen,
+#sound-button-game-screen,
+#sound-button-gameover-screen,
+#sound-button-gameover-screen-2,
+#restart-button-2 {
   font-size: 20px;
   font-family: "Ubuntu";
   background-color: #0476f2;
@@ -29,14 +34,18 @@
   border-radius: 5px;
 }
 
-#sound-button {
+#sound-button-splash-screen,
+#sound-button-game-screen,
+#sound-button-gameover-screen,
+#sound-button-gameover-screen-2 {
   position: absolute;
   top: 1em;
   left: 47.5em;
 }
 
 #start-button,
-#restart-button {
+#restart-button,
+#restart-button-2 {
   position: absolute;
   left: 24.2em;
   top: 26em;
@@ -66,19 +75,6 @@
   margin: 10px;
   text-shadow: 2px 2px black;
 }
-
-/* #game-screen {
-  float: center;
-  padding: 0% 3%;
-  width: 1000px;
-  height: 560px;
-  border: 2px solid #0476f2;
-}*/
-
-/*#gameover-screen {
-  float: center;
-  padding: 0% 3%;
-}*/
 
 .wrap {
   display: block;
